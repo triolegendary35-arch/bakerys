@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Yasmin's Bakery - Freshly baked treats, made with love.">
+
+    <title>Yasmin's Bakery | Freshly Baked with Love</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="#home" class="logo">
+                <span>Yasmin's</span>
+                <span>Bakery</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#catalog" class="nav-link">Catalog</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <button type="button" class="cart-link" id="cartToggle"
+                        aria-label="Keranjang" aria-controls="cartDrawer"
+                        aria-expanded="false">
+                    <svg width="23" height="23" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor"
+                         stroke-width="1.5" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"/>
+                        <circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-badge" id="cartBadge" hidden>0</span>
+                </button>
+
+                <button class="menu-toggle" id="menuToggle"
+                        aria-label="Open navigation"
+                        aria-expanded="false"
+                        aria-controls="navMenu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="container hero-container">
+
+                <!-- LEFT CONTENT -->
+                <div class="hero-content">
+
+                    <span class="hero-script">Taste</span>
+
+                    <h1>
+                        Chocolate
+                        <span>Fudge Cake</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Rich chocolate layers with smooth fudge filling,
+                        made for your sweetest moments.
+                    </p>
+
+                    <a href="#catalog" class="hero-button">
+                        Explore Menu
+                        <span>→</span>
+                    </a>
+
+                    <div class="hero-bottom">
+                        <span class="slide-number">01 / 03</span>
+
+                        <div class="slide-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT PRODUCT IMAGE -->
+                <div class="hero-visual">
+
+                    <div class="image-glow"></div>
+                    <div class="cake-blob"></div>
+
+                    <div class="hero-slides">
+                        <div class="slides-track">
+
+                            <div class="slide">
+                                <img
+                                    src="assets/images/cake.jpg"
+                                    alt="Chocolate Fudge Cake"
+                                    class="cake-image"
+                                >
+                            </div>
+
+                            <div class="slide">
+                                <img
+                                    src="assets/fudgebrownies1.webp"
+                                    alt=""
+                                    class="cake-image"
+                                >
+                            </div>
+
+                            <div class="slide">
+                                <img
+                                    src="assets/Black-Forest-Cake-01.jpg"
+                                    alt=""
+                                    class="cake-image"
+                                >
+                            </div>
+
+                            <div class="slide" aria-hidden="true">
+                                <img
+                                    src="assets/images/cake.jpg"
+                                    alt=""
+                                    class="cake-image"
+                                >
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <span class="image-caption">
+                        Freshly baked with love
+                    </span>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FEATURED PRODUCTS -->
+        <section class="catalog-section" id="catalog">
+
+            <div class="container">
+
+                <div class="catalog-heading">
+                    <span class="section-script">Baked with Love</span>
+
+                    <h2>Our Sweet Creations</h2>
+
+                    <p>
+                        A collection of warm, comforting treats,
+                        freshly baked to sweeten your everyday moments.
+                    </p>
+                </div>
+
+
+                <div class="product-grid">
+
+                    <!-- PRODUCT 1: BROWNIES -->
+                    <article class="product-card"
+                             data-name="Fudgy Chocolate Brownies"
+                             data-price="55000"
+                             data-image="assets/fudgebrownies1.webp"
+                             data-category="CHOCOLATE SERIES"
+                             data-desc="Brownies cokelat fudgy, lembut di tengah dengan rasa kakao pekat. Dipanggang segar setiap hari dengan dark chocolate berkualitas.">
+
+                        <div class="product-image">
+
+                            <img
+                                src="assets/fudgebrownies1.webp"
+                                alt="Fudgy Chocolate Brownies"
+                                loading="lazy"
+                            >
+
+                            <span class="product-tag">Bestseller</span>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                CHOCOLATE SERIES
+                            </span>
+
+                            <h3>Fudgy Chocolate Brownies</h3>
+
+                            <p>
+                                Rich chocolate brownies with a soft,
+                                fudgy center and irresistible cocoa flavor.
+                            </p>
+
+                            <span class="product-price">Rp 55.000</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 2: BLACK FOREST CAKE -->
+                    <article class="product-card"
+                             data-name="Black Forest Cake"
+                             data-price="150000"
+                             data-image="assets/Black-Forest-Cake-01.jpg"
+                             data-category="SIGNATURE CAKE"
+                             data-desc="Bolu cokelat berlapis krim dan ceri segar, dihias serutan cokelat. Klasik Eropa yang lembut dan penuh rasa.">
+
+                        <div class="product-image">
+
+                            <img
+                                src="assets/Black-Forest-Cake-01.jpg"
+                                alt="Black Forest Cake"
+                                loading="lazy"
+                                class="warm"
+                            >
+
+                            <span class="product-tag">House Favorite</span>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                SIGNATURE CAKE
+                            </span>
+
+                            <h3>Black Forest Cake</h3>
+
+                            <p>
+                                Dark chocolate sponge layered with cream
+                                and cherries, finished with chocolate curls.
+                            </p>
+
+                            <span class="product-price">Rp 150.000</span>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 3: CHOCOLATE FUDGE CAKE -->
+                    <article class="product-card"
+                             data-name="Chocolate Fudge Cake"
+                             data-price="135000"
+                             data-image="assets/images/cake.jpg"
+                             data-category="BAKERY FAVORITES"
+                             data-desc="Lapisan cokelat lembut dengan isian fudge manis, dibuat untuk momen spesial. Kue favorit semua umur.">
+
+                        <div class="product-image">
+
+                            <img
+                                src="assets/images/cake.jpg"
+                                alt="Chocolate Fudge Cake"
+                                loading="lazy"
+                            >
+
+                            <span class="product-tag">Freshly Baked</span>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                BAKERY FAVORITES
+                            </span>
+
+                            <h3>Chocolate Fudge Cake</h3>
+
+                            <p>
+                                Rich chocolate layers with smooth fudge
+                                filling, made for your sweetest moments.
+                            </p>
+
+                            <span class="product-price">Rp 135.000</span>
+
+                        </div>
+                    </article>
+
+                </div>
+
+
+                <a href="#contact" class="catalog-button">
+                    Explore All Products <span>→</span>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+
+            <div class="container">
+
+                <span class="section-script">Our Story</span>
+
+                <h2>About Yasmin's Bakery</h2>
+
+                <p>
+                    Every creation is made with care and passion.
+                    We believe every sweet moment deserves something special.
+                </p>
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+
+        <div class="container">
+
+            <h2>Yasmin's Bakery</h2>
+
+            <p>Freshly Baked, Made with Love.</p>
+
+            <span>
+                © <span id="year"></span> Yasmin's Bakery
+            </span>
+
+        </div>
+    </footer>
+
+
+    <!-- PRODUCT DETAIL MODAL -->
+    <div class="product-modal" id="productModal" aria-hidden="true">
+
+        <div class="modal-overlay" data-modal-close></div>
+
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+
+            <button class="modal-close" type="button"
+                    aria-label="Close" data-modal-close>&times;</button>
+
+            <div class="modal-image">
+                <img id="modalImg" src="" alt="">
+            </div>
+
+            <div class="modal-body">
+
+                <span class="modal-category" id="modalCategory"></span>
+
+                <h3 id="modalTitle"></h3>
+
+                <p class="modal-desc" id="modalDesc"></p>
+
+                <span class="modal-price" id="modalPrice"></span>
+
+                <div class="modal-qty">
+                    <button type="button" class="qty-button"
+                            id="qtyMinus" aria-label="Decrease quantity">−</button>
+
+                    <span class="qty-value" id="qtyValue">1</span>
+
+                    <button type="button" class="qty-button"
+                            id="qtyPlus" aria-label="Increase quantity">+</button>
+                </div>
+
+                <div class="modal-total">
+                    <span>Total</span>
+                    <strong id="modalTotal"></strong>
+                </div>
+
+                <button type="button" class="modal-checkout" id="addToCartBtn">
+                    Tambah ke Keranjang <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CART DRAWER -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+
+        <div class="cart-header">
+            <h3>Keranjang</h3>
+            <button type="button" class="cart-close" id="cartClose"
+                    aria-label="Tutup keranjang">&times;</button>
+        </div>
+
+        <div class="cart-body" id="cartBody">
+            <p class="cart-empty" id="cartEmpty">Keranjang masih kosong.</p>
+            <ul class="cart-list" id="cartList"></ul>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cartTotal">Rp 0</strong>
+            </div>
+            <button type="button" class="cart-checkout" id="cartCheckoutBtn" disabled>
+                Pesan via WhatsApp <span>→</span>
+            </button>
+        </div>
+
+    </aside>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
